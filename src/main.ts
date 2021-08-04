@@ -34,7 +34,11 @@ router.afterEach((to, from) => {
     // Use next tick to handle router history correctly
     // see: https://github.com/vuejs/vue-router/issues/914#issuecomment-384477609
     Vue.nextTick(() => {
+      if (to && to.meta) {
         document.title = to.meta.title || DEFAULT_TITLE;
+      } else {
+        document.title = DEFAULT_TITLE;
+      }
     });
 });
 router.beforeEach((to: Route, from: Route, next: any) => {
