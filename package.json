@@ -30,7 +30,7 @@
     "nth-check": "^2.0.1",
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
-    "postcss": "~8.4.12",
+    "postcss": "~8.4.31",
     "register-service-worker": "^1.7.2",
     "set-value": "^4.1.0",
     "tslib": "^2.3.1",
